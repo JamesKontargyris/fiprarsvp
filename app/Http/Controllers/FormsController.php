@@ -9,25 +9,14 @@ use Illuminate\Support\Facades\Mail;
 
 class FormsController extends Controller {
 
-    public function whitehousedinner()
+    private function send($to, $fromAddress, $fromName, $subject, $data, $view = 'emails.rsvp')
     {
-        return view('forms.whitehousedinner');
-	}
-
-    public function whitehousedinnerprocess(WhiteHouseDinnerRequest $request)
-    {
-        $data = [];
-        $data['form-data'] = $request->except('_token');
-        $data['subject'] = 'White House Dinner RSVP';
-
-        Mail::send('emails.rsvp', compact('data'), function($message) use ($data)
+        Mail::send($view, compact('data', 'subject'), function($message) use ($to, $fromAddress, $fromName, $subject, $data)
         {
             $message->to('james.kontargyris@fipra.com')
-                    ->from('networkmeeting@fipra.com', 'Fipra RSVP System')
-                    ->subject($data['subject']);
+                    ->from($fromAddress, $fromName)
+                    ->subject($subject);
         });
-
-        return view('success');
     }
 
 }

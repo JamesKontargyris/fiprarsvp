@@ -11,12 +11,4 @@
 |
 */
 
-Route::get('whitehousedinner', 'FormsController@whitehousedinner');
-Route::post('whitehousedinner', 'FormsController@whitehousedinnerprocess');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::controller('whitehousedinner', 'WhiteHouseDinnerController');

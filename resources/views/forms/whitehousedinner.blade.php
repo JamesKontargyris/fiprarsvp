@@ -38,6 +38,10 @@
                 {!! Form::text('host', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
+                {!! Form::label('additional_info', 'Any additional information:') !!}
+                {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
+            </div>
+            <div class="form-group">
                 {!! Form::submit('Send RSVP', ['class' => 'form-control']) !!}
             </div>
         {!! Form::close() !!}

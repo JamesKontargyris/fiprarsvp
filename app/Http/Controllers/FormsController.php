@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 
 class FormsController extends Controller {
 
-    private function send($to, $fromAddress, $fromName, $subject, $data, $view = 'emails.rsvp')
+    protected function sendMail($to, $fromAddress, $fromName, $subject, $data, $view = 'emails.rsvp')
     {
         Mail::send($view, compact('data', 'subject'), function($message) use ($to, $fromAddress, $fromName, $subject, $data)
         {

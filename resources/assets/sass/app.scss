@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-  padding:40px 0 100px 0;
+  padding:40px 0 40px 0;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-wight:$normal;
   font-size:16px;
@@ -75,9 +75,12 @@ hr {
     list-style: none;
     background-color: lighten(red, 40%);
     padding:$vr em(10);
-    margin:0 em(30);
+    margin:0 em(30) $vr em(30);
     color:darken(red, 20%);
     border:1px solid lighten(red, 20%);
+    @include media($mobile) {
+      margin:$vr em(10);
+    }
   }
 
   header {
@@ -143,12 +146,9 @@ hr {
       }
     }
   }
+}
 
-  footer {
-    margin-top:$vr;
-    text-align: center;
-    img {
-      margin-bottom:-30px;
-    }
-  }
+footer {
+  margin:($vr * 2) 0 $vr 0;
+  text-align: center;
 }

@@ -169,7 +169,7 @@ html, body {
   min-height: 100%; }
 
 body {
-  padding: 40px 0 100px 0;
+  padding: 40px 0 40px 0;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-wight: 400;
   font-size: 16px;
@@ -222,9 +222,12 @@ hr {
     list-style: none;
     background-color: #ffcccc;
     padding: 0.75em 0.625em;
-    margin: 0 1.875em;
+    margin: 0 1.875em 0.75em 1.875em;
     color: #990000;
     border: 1px solid #ff6666; }
+    @media screen and (max-width: 480px)  {
+      .container ul.errors {
+        margin: 0.75em 0.625em; } }
   .container header {
     padding: 1.5em 1.875em; }
     .container header::after {
@@ -283,11 +286,10 @@ hr {
           .container .form .form-group input[type=submit] {
             display: block;
             width: 100%; } }
-  .container footer {
-    margin-top: 0.75em;
-    text-align: center; }
-    .container footer img {
-      margin-bottom: -30px; }
+
+footer {
+  margin: 1.5em 0 0.75em 0;
+  text-align: center; }
 
 
 /*# sourceMappingURL=app.css.map */

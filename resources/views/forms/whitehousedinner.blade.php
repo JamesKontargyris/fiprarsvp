@@ -19,7 +19,7 @@
         <h4>Top of the Hay, The Hay Adams - Rooftop, 800 16th ST NW, Washington D.C. 20006</h4>
         <h4>Dress code: Smoking Jacket / Black Tie / Tuxedo for men</h4>
         <hr/>
-        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register.</p>
+        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to RSVP.</p>
         {!! Form::open() !!}
             <div class="form-group">
                 {!! Form::label('name', 'Your Name:') !!}
@@ -30,15 +30,15 @@
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('telno', 'Your mobile/cell number:') !!}
-                {!! Form::text('telno', null, ['class' => 'form-control']) !!}
+                {!! Form::label('telephone', 'Your mobile/cell number:') !!}
+                {!! Form::text('telephone', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('host', 'Your Fipra Host for this Event:') !!}
                 {!! Form::text('host', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Register', ['class' => 'form-control']) !!}
+                {!! Form::submit('Send RSVP', ['class' => 'form-control']) !!}
             </div>
         {!! Form::close() !!}
     </div>

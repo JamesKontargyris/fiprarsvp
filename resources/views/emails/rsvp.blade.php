@@ -12,7 +12,7 @@
         </tr>
         @foreach($data['form-data'] as $field => $value)
             <tr>
-                <td>{{ strtoupper(str_replace('_', ' ', $field)) }}: {{ $value }}</td>
+                <td>{{ strtoupper(str_replace('_', ' ', $field)) }}</td><td>{{ $value }}</td>
             </tr>
         @endforeach
     </table>

@@ -17,7 +17,11 @@ class WhiteHouseDinnerController extends FormsController {
     {
         $this->sendMail(env('EMAIL_RECIPIENT', 'james.kontargyris@fipra.com'), 'networkmeeting@fipra.com', 'White House Dinner RSVP', 'White House Dinner RSVP', $request->except('_token'));
 
-        return view('success');
+        $messages = [];
+        $messages['title'] = "Thank you - we've received your RSVP.";
+        $messages['body'] = "We look forward to seeing you in Washington!";
+
+        return view('success', compact('messages'));
     }
 
 }

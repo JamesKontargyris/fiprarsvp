@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="form">
-        <h1>Thank you - we've received your RSVP.</h1>
-        <p>We look forward to seeing you in Washington!</p>
+        <h1>{{ $messages['title']  }}</h1>
+        <p>{{ $messages['body'] }}</p>
     </div>
 @stop

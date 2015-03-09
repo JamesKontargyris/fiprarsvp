@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('whitehousedinner', 'FormsController@whitehousedinner');
+Route::post('whitehousedinner', 'FormsController@whitehousedinnerprocess');
 
 Route::get('home', 'HomeController@index');
 

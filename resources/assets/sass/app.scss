@@ -1,0 +1,154 @@
+@import "normalize/normalize";
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+//Variables
+$fipra-blue: #00257f;
+$fipra-blue-gray: #5F697F;
+$fipra-periwinkle: #ccd3e5;
+$fipra-violet: #6f5ce5;
+$fipra-turquoise: #14b1cc;
+//Vertical Rhythm
+$vr: em(12);
+//Font weights
+$light: 300;
+$normal: 400;
+$bold: 700;
+$heavy: 900;
+
+html, body {
+  background:$fipra-blue;
+  min-height:100%;
+}
+
+body {
+  padding:40px 0 100px 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-wight:$normal;
+  font-size:16px;
+  line-height:$vr * 2;
+  @include media($tablet) {
+    padding:0;
+  }
+}
+
+h1 {
+  color: $fipra-blue;
+  font-size:32px;
+  line-height: $vr * 3;
+  letter-spacing: -1px;
+  margin:0 0 $vr / 2 0;
+  padding:0;
+  @include media($tablet) {
+    font-size:28px;
+    line-height: $vr * 2;
+  }
+}
+h3, h4 {
+  margin:0 0 $vr 0;
+}
+h3 {
+  font-size: 20px;
+  font-weight: $bold;
+}
+h4 {
+  font-weight: $normal;
+  font-size: 18px;
+  color:$fipra-blue-gray;
+}
+
+hr {
+  height:1px;
+  border:0;
+  background-color: $fipra-periwinkle;
+  margin:$vr * 2 0;
+}
+
+.container {
+  @include outer-container;
+  background-color:white;
+  border-bottom:2px solid darken($fipra-blue, 20%);
+
+  ul.errors {
+    list-style: none;
+    background-color: lighten(red, 40%);
+    padding:$vr em(10);
+    margin:0 em(30);
+    color:darken(red, 20%);
+    border:1px solid lighten(red, 20%);
+  }
+
+  header {
+    padding:($vr * 2) em(30);
+    @include clearfix;
+    @include media($mobile) {
+      padding:($vr * 2) em(10);
+      .logo { text-align:center; }
+    }
+  }
+
+  .banner {
+    margin-bottom:$vr;
+    @include media($tablet) {
+      img { display:none; }
+      width:auto !important;
+    }
+    @include media($mobile) {
+      display: none;
+    }
+  }
+  .dinner-banner {
+    @include media($tablet) {
+      background:url('../img/dinner_banner_small_2x.jpg') left 0 no-repeat;
+      background-size:700px 198px;
+      height:198px;
+    }
+  }
+
+  .form {
+    padding:0 em(30) ($vr * 2) em(30);
+    @include media($mobile) {
+      padding:0 em(10) ($vr * 2) em(10);
+    }
+
+    .form-group {
+      &:not(:last-child) {
+        padding-bottom:($vr * 2);
+      }
+      label {
+        display:block;
+        font-size:14px;
+        font-weight: $heavy;
+        text-transform: uppercase;
+        padding-bottom:$vr;
+      }
+      input {
+        width:100%;
+        font-size:em(20);
+        padding:10px;
+        @include media($tablet) {
+          font-size:em(16);
+        }
+        &[type=submit] {
+          width:auto;
+          @include linear-gradient(lighten($fipra-blue, 10%) 0, $fipra-blue 50%);
+          padding:$vr;
+          color:white;
+          border:0;
+          border-bottom:2px solid $fipra-blue-gray;
+          @include media($tablet) { display: block; width:100%; }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top:$vr;
+    text-align: center;
+    img {
+      margin-bottom:-30px;
+    }
+  }
+}

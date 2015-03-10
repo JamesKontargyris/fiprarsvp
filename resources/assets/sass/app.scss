@@ -29,7 +29,7 @@ body {
   font-wight:$normal;
   font-size:16px;
   line-height:$vr * 2;
-  @include media($tablet) {
+  @include media($mobile) {
     padding:0;
   }
 }

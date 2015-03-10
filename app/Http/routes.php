@@ -12,6 +12,7 @@
 */
 
 Route::controller('whitehousedinner', 'WhiteHouseDinnerController');
+Route::controller('globalgovernmentrelationsfair', 'GlobalGovernmentRelationsFairController');
 
 Route::get('success', function()
 {

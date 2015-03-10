@@ -262,6 +262,11 @@ hr {
       background: url('../img/dinner_banner_small_2x.jpg') left 0 no-repeat;
       background-size: 700px 198px;
       height: 198px; } }
+  @media screen and (max-width: 768px)  {
+    .container .fair-banner {
+      background: url('../img/fair_banner_small_2x.jpg') left 0 no-repeat;
+      background-size: 700px 198px;
+      height: 198px; } }
   .container .form {
     padding: 0 1.875em 1.5em 1.875em; }
     @media screen and (max-width: 480px)  {

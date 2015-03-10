@@ -118,6 +118,13 @@ hr {
       height:198px;
     }
   }
+  .fair-banner {
+    @include media($tablet) {
+      background:url('../img/fair_banner_small_2x.jpg') left 0 no-repeat;
+      background-size:700px 198px;
+      height:198px;
+    }
+  }
 
   .form {
     padding:0 em(30) ($vr * 2) em(30);

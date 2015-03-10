@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ $subject }}</title>
+    <title>{{ $event }}</title>
 </head>
 <body>
     <p>The following RSVP was received:</p>
     <table cellspacing="5" cellpadding="5" border="0">
         <tr>
-            <td>EVENT:</td><td>{{ $subject }}</td>
+            <td>EVENT:</td><td>{{ $event }}</td>
         </tr>
         @foreach($data as $field => $value)
             <tr>

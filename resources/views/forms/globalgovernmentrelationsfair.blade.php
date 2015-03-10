@@ -1,19 +1,18 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="banner dinner-banner">
-        <img src="img/dinner_banner_large_2x.jpg" alt="Fipra White House Dinner Photo Montage" width="700" height="402"/>
+    <div class="banner fair-banner">
+        <img src="img/fair_banner_large_2x.jpg" alt="Fipra Global Government Relations Fair Photo Montage" width="700" height="402"/>
     </div>
 
     @include('partials.errors')
 
     <div class="form">
-        <h1>RSVP: Fipra's White House Dinner</h1>
-        <h3>Wednesday, 24 June 2015, 19.00 - late</h3>
-        <h4>Top of the Hay, The Hay Adams - Rooftop, 800 16th ST NW, Washington D.C. 20006</h4>
-        <h4>Dress code: Smoking Jacket / Black Tie / Tuxedo for men</h4>
+        <h1>Fipra's Global Government Relations Fair</h1>
+        <h3>Thursday, 25 June 2015, 14.00 - 17.00</h3>
+        <h4>The Newseum, 555 Pennsylvania Ave NW, Washington DC</h4>
         <hr/>
-        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to RSVP.</p>
+        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>
         {!! Form::open() !!}
             <div class="form-group">
                 {!! Form::label('first_name', 'First Name:') !!}
@@ -40,7 +39,7 @@
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Send RSVP', ['class' => 'form-control']) !!}
+                {!! Form::submit('Register', ['class' => 'form-control']) !!}
             </div>
         {!! Form::close() !!}
     </div>

@@ -9,13 +9,13 @@ use Illuminate\Support\Facades\Mail;
 
 class FormsController extends Controller {
 
-    protected function sendMail($to, $fromAddress, $fromName, $subject, $data, $view = 'emails.rsvp')
+    protected function sendMail($to, $fromAddress, $fromName, $event, $data, $view = 'emails.rsvp')
     {
-        Mail::send($view, compact('data', 'subject'), function($message) use ($to, $fromAddress, $fromName, $subject, $data)
+        Mail::send($view, compact('data', 'event'), function($message) use ($to, $fromAddress, $fromName, $event, $data)
         {
             $message->to('james.kontargyris@fipra.com')
                     ->from($fromAddress, $fromName)
-                    ->subject($subject);
+                    ->subject('RSVP: ' . $event);
         });
     }
 

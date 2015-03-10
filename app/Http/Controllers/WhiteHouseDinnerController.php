@@ -15,13 +15,9 @@ class WhiteHouseDinnerController extends FormsController {
 
     public function postIndex(WhiteHouseDinnerRequest $request)
     {
-        $this->sendMail(env('EMAIL_RECIPIENT', 'james.kontargyris@fipra.com'), 'networkmeeting@fipra.com', 'White House Dinner RSVP', 'White House Dinner RSVP', $request->except('_token'));
+//        $this->sendMail(env('EMAIL_RECIPIENT', 'james.kontargyris@fipra.com'), 'networkmeeting@fipra.com', 'White House Dinner RSVP', 'White House Dinner RSVP', $request->except('_token'));
 
-        $messages = [];
-        $messages['title'] = "Thank you - we've received your RSVP.";
-        $messages['body'] = "We look forward to seeing you in Washington!";
-
-        return view('success', compact('messages'));
+        return redirect('success')->with('first_name', $request->get('first_name'));
     }
 
 }

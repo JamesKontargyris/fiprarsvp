@@ -178,10 +178,18 @@ body {
     body {
       padding: 0; } }
 
+a:link, a:visited {
+  color: #00257f;
+  text-decoration: none;
+  font-weight: 700; }
+
+a:hover {
+  color: #5F697F; }
+
 h1 {
   color: #00257f;
   font-size: 32px;
-  line-height: 2.25em;
+  line-height: 1.5em;
   letter-spacing: -1px;
   margin: 0 0 0.375em 0;
   padding: 0; }

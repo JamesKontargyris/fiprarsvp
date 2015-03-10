@@ -34,10 +34,19 @@ body {
   }
 }
 
+a:link, a:visited {
+  color:$fipra-blue;
+  text-decoration: none;
+  font-weight: $bold;
+}
+a:hover {
+  color:$fipra-blue-gray;
+}
+
 h1 {
   color: $fipra-blue;
   font-size:32px;
-  line-height: $vr * 3;
+  line-height: $vr * 2;
   letter-spacing: -1px;
   margin:0 0 $vr / 2 0;
   padding:0;

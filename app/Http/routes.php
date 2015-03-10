@@ -12,3 +12,8 @@
 */
 
 Route::controller('whitehousedinner', 'WhiteHouseDinnerController');
+
+Route::get('success', function()
+{
+    return view('success');
+});

@@ -22,19 +22,23 @@
         <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to RSVP.</p>
         {!! Form::open() !!}
             <div class="form-group">
-                {!! Form::label('name', 'Your Name:') !!}
-                {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                {!! Form::label('first_name', 'First Name:') !!}
+                {!! Form::text('first_name', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('email', 'Your Email Address:') !!}
+                {!! Form::label('last_name', 'Last Name:') !!}
+                {!! Form::text('last_name', null, ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label('email', 'Email Address:') !!}
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('telephone', 'Your mobile/cell number:') !!}
+                {!! Form::label('telephone', 'Mobile/cell number:') !!}
                 {!! Form::text('telephone', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('host', 'Your Fipra Host for this Event:') !!}
+                {!! Form::label('host', 'Your Fipra Host for this event:') !!}
                 {!! Form::text('host', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">

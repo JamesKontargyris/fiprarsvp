@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/', function()
+{
+    abort(404);
+});
+
 Route::controller('whitehousedinner', 'WhiteHouseDinnerController');
 Route::controller('globalgovernmentrelationsfair', 'GlobalGovernmentRelationsFairController');
 

@@ -13,7 +13,7 @@ class FormsController extends Controller {
     {
         Mail::send($view, compact('data', 'event'), function($message) use ($to, $fromAddress, $fromName, $event, $data)
         {
-            $message->to('james.kontargyris@fipra.com')
+            $message->to($to)
                     ->from($fromAddress, $fromName)
                     ->subject('RSVP: ' . $event);
         });

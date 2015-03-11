@@ -14,7 +14,6 @@
         <h4>Dress code: Smoking Jacket / Black Tie / Tuxedo for men</h4>
         <hr/>
         <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to RSVP.</p>
-        <p>You will be sent a formal invitation in due course.</p>
         <p>Any of the details you provide below will not be used for any other purposes.</p>
 
         {!! Form::open() !!}

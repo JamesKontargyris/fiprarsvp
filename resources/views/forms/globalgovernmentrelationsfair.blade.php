@@ -13,6 +13,8 @@
         <h4>The Newseum, 555 Pennsylvania Ave NW, Washington DC</h4>
         <hr/>
         <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>
+        <p>You will be sent a formal invitation in due course.</p>
+        <p>Any of the details you provide below will not be used for any other purposes.</p>
         {!! Form::open() !!}
             <div class="form-group">
                 {!! Form::label('first_name', 'First Name:') !!}

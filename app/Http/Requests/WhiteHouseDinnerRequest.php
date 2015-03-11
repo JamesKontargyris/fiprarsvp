@@ -27,7 +27,7 @@ class WhiteHouseDinnerRequest extends Request
             'last_name'  => 'required',
             'email'      => 'required|email',
             'telephone'  => 'required',
-            'host'       => 'required'
+            'invited_by' => 'required'
         ];
     }
 
@@ -39,7 +39,7 @@ class WhiteHouseDinnerRequest extends Request
             'email.required'      => 'Please enter your email address.',
             'email.email'         => 'Please enter a valid email address.',
             'telephone.required'  => 'Please enter your mobile/cell number.',
-            'host.required'       => 'Please enter the name of your Fipra host.'
+            'invited_by.required' => 'Please enter the name of the Fipra Network member who invited you.'
         ];
     }
 

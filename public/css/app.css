@@ -189,6 +189,7 @@ a:hover {
 h1 {
   color: #00257f;
   font-size: 32px;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: -1px;
   margin: 0 0 0.375em 0;
@@ -215,6 +216,11 @@ hr {
   border: 0;
   background-color: #ccd3e5;
   margin: 1.5em 0; }
+
+.form-field-info {
+  color: #5F697F;
+  font-style: italic;
+  font-size: 0.8em; }
 
 .container {
   max-width: 43.75em;
@@ -278,7 +284,6 @@ hr {
       display: block;
       font-size: 14px;
       font-weight: 900;
-      text-transform: uppercase;
       padding-bottom: 0.75em; }
     .container .form .form-group input {
       width: 100%;

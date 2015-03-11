@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="banner fair-banner">
-        <img src="img/fair_banner_large_2x.jpg" alt="Fipra Global Government Relations Fair Photo Montage" width="700" height="402"/>
-    </div>
+    {{--<div class="banner fair-banner">--}}
+        {{--<img src="img/fair_banner_large_2x.jpg" alt="Fipra Global Government Relations Fair Photo Montage" width="700" height="402"/>--}}
+    {{--</div>--}}
 
     @include('partials.errors')
 
@@ -29,10 +29,11 @@
             <div class="form-group">
                 {!! Form::label('telephone', 'Mobile/cell number (with country/area code):') !!}
                 {!! Form::text('telephone', null, ['class' => 'form-control']) !!}
+                <span class="form-field-info">In case we need to reach you about the event</span>
             </div>
             <div class="form-group">
-                {!! Form::label('host', 'Your Fipra Host for this event:') !!}
-                {!! Form::text('host', null, ['class' => 'form-control']) !!}
+                {!! Form::label('fipra_contact', 'Who are your current contacts in the Fipra Network?') !!}
+                {!! Form::text('fipra_contact', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('additional_info', 'Any additional information:') !!}

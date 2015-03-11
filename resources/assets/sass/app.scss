@@ -46,6 +46,7 @@ a:hover {
 h1 {
   color: $fipra-blue;
   font-size:32px;
+  font-weight:$normal;
   line-height: $vr * 2;
   letter-spacing: -1px;
   margin:0 0 $vr / 2 0;
@@ -73,6 +74,12 @@ hr {
   border:0;
   background-color: $fipra-periwinkle;
   margin:$vr * 2 0;
+}
+
+.form-field-info {
+  color:$fipra-blue-gray;
+  font-style: italic;
+  font-size:0.8em;
 }
 
 .container {
@@ -140,7 +147,6 @@ hr {
         display:block;
         font-size:14px;
         font-weight: $heavy;
-        text-transform: uppercase;
         padding-bottom:$vr;
       }
       input {

@@ -36,7 +36,7 @@
                 {!! Form::text('fipra_contact', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('additional_info', 'Any additional information:') !!}
+                {!! Form::label('additional_info', 'Any additional information, message or comment?') !!}
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">

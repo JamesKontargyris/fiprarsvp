@@ -1,9 +1,8 @@
 @extends('layouts.master')
 
 @section('logo_image')
-    <img src="img/fipra_network_meeting_logo_2x.png" alt="Fipra Logo" width="215" height="45"/>
+    <img src="img/fipra_network_meeting_logo_2x.png" alt="Fipra Logo" width="285" height="48"/>
 @stop
-
 
 @section('content')
     <div class="form">
@@ -14,4 +13,8 @@
             We look forward to seeing you soon!</p>
             <p><a href="http://fipra.com">fipra.com</a></p>
     </div>
+@stop
+
+@section('footer')
+    <img src="img/15th_anniversary_emblem_2x.png" alt="Fipra's 15th Anniversary - 2000-2015" width="175" height="115"/>
 @stop

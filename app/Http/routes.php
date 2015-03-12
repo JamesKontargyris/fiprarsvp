@@ -18,8 +18,14 @@ Route::get('/', function()
 
 Route::controller('whitehousedinner', 'WhiteHouseDinnerController');
 Route::controller('globalgovernmentrelationsfair', 'GlobalGovernmentRelationsFairController');
+Route::controller('finsburyreception', 'FinsburyReceptionController');
 
-Route::get('success', function()
+Route::get('success_fipra', function()
 {
-    return view('success');
+    return view('success_fipra');
+});
+
+Route::get('success_finsbury', function()
+{
+    return view('success_finsbury');
 });

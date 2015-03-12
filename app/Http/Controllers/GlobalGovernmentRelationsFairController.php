@@ -17,7 +17,7 @@ class GlobalGovernmentRelationsFairController extends FormsController {
     {
         $this->sendMail(env('EMAIL_RECIPIENT', 'james.kontargyris@fipra.com'), 'networkmeeting@fipra.com', 'Fipra Network Meeting RSVP System', 'Global Government Relations Fair', $request->except('_token'));
 
-        return redirect('success')->with('first_name', $request->get('first_name'));
+        return redirect('success_fipra')->with('first_name', $request->get('first_name'));
     }
 
 }

@@ -1,25 +1,26 @@
 @extends('layouts.master')
 
+@section('body_classes') finsbury @stop
+
 @section('logo_image')
-    <img src="img/fipra_network_meeting_logo_2x.png" alt="Fipra Logo" width="285" height="48"/>
+    <img src="img/finsbury_logo_2x.gif" alt="Finsbury Logo" width="215" height="45"/>
 @stop
 
 @section('content')
-    {{--<div class="banner dinner-banner">--}}
-        {{--<img src="img/dinner_banner_large_2x.jpg" alt="Fipra White House Dinner Photo Montage" width="700" height="402"/>--}}
+    {{--<div class="banner fair-banner">--}}
+        {{--<img src="img/fair_banner_large_2x.jpg" alt="Fipra Global Government Relations Fair Photo Montage" width="700" height="402"/>--}}
     {{--</div>--}}
 
     @include('partials.errors')
 
-    <div class="form">
-        <h1>RSVP: Fipra's White House Dinner</h1>
-        <h3>Wednesday, 24 June 2015, 19.00 - late</h3>
-        <h4>Top of the Hay, The Hay Adams - Rooftop, 800 16th ST NW, Washington D.C. 20006</h4>
-        <h4>Dress code: Smoking Jacket / Black Tie / Tuxedo for men</h4>
+    <div class="form finsbury-form">
+        <h1>Finsbury Global Government Affairs Drinks Reception</h1>
+        <h3>Tuesday, 23 June 2015, 18.30 - 21.30</h3>
+        <h4>The Rooftop Terrace, Finsbury offices, 3 Columbus Circle, New York, 10019, USA</h4>
         <hr/>
-        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to RSVP.</p>
+        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>
+        <p>You will be sent a formal invitation in due course.</p>
         <p>Any of the details you provide below will not be used for any other purposes.</p>
-
         {!! Form::open() !!}
             <div class="form-group">
                 {!! Form::label('first_name', 'First Name:') !!}
@@ -39,20 +40,16 @@
                 <span class="form-field-info">In case we need to reach you about the event</span>
             </div>
             <div class="form-group">
-                {!! Form::label('invited_by', 'Who in Fipra invited you to this dinner?') !!}
-                {!! Form::text('invited_by', null, ['class' => 'form-control']) !!}
+                {!! Form::label('fipra_contact', 'Who are your current contacts in the Fipra Network?') !!}
+                {!! Form::text('fipra_contact', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('additional_info', 'Any additional information, message or comment?') !!}
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Send RSVP', ['class' => 'form-control fipra']) !!}
+                {!! Form::submit('Register', ['class' => 'form-control finsbury']) !!}
             </div>
         {!! Form::close() !!}
     </div>
-@stop
-
-@section('footer')
-    <img src="img/15th_anniversary_emblem_2x.png" alt="Fipra's 15th Anniversary - 2000-2015" width="175" height="115"/>
 @stop

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('logo_image')
+    <img src="img/fipra_network_meeting_logo_2x.png" alt="Fipra Logo" width="285" height="48"/>
+@stop
+
 @section('content')
     {{--<div class="banner fair-banner">--}}
         {{--<img src="img/fair_banner_large_2x.jpg" alt="Fipra Global Government Relations Fair Photo Montage" width="700" height="402"/>--}}
@@ -42,8 +46,12 @@
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Register', ['class' => 'form-control']) !!}
+                {!! Form::submit('Register', ['class' => 'form-control fipra']) !!}
             </div>
         {!! Form::close() !!}
     </div>
+@stop
+
+@section('footer')
+    <img src="img/15th_anniversary_emblem_2x.png" alt="Fipra's 15th Anniversary - 2000-2015" width="175" height="115"/>
 @stop

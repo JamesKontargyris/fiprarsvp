@@ -13,7 +13,7 @@
 
     <div class="form">
         <h1>Fipra's Global Government Relations Fair</h1>
-        <h3>Thursday, 25 June 2015, 14.00 - 17.00</h3>
+        <h3>Thursday, 25 June 2015, 2:00pm - 5.00pm</h3>
         <h4>The Newseum, 555 Pennsylvania Ave NW, Washington DC</h4>
         <hr/>
         <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>

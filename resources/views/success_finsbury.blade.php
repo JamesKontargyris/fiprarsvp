@@ -3,7 +3,7 @@
 @section('body_classes') finsbury @stop
 
 @section('logo_image')
-    <img src="img/finsbury_logo_2x.gif" alt="Finsbury Logo" width="215" height="45"/>
+    <img src="img/finsbury_fipra_logos.gif" alt="Finsbury and Fipra Logos" width="243" height="40"/>
 @stop
 
 @section('content')

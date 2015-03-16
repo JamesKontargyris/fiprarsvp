@@ -13,7 +13,7 @@
 
     <div class="form">
         <h1>RSVP: Fipra's White House Dinner</h1>
-        <h3>Wednesday, 24 June 2015, 19.00 - late</h3>
+        <h3>Wednesday, 24 June 2015, 7:00pm - late</h3>
         <h4>Top of the Hay, The Hay Adams - Rooftop, 800 16th ST NW, Washington D.C. 20006</h4>
         <h4>Dress code: Smoking Jacket / Black Tie / Tuxedo for men</h4>
         <hr/>

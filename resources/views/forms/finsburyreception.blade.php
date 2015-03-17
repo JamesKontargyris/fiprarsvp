@@ -14,8 +14,8 @@
     @include('partials.errors')
 
     <div class="form finsbury-form">
-        <h1>Global Government Affairs Drinks Reception</h1>
-        <h3>Tuesday, 23 June 2015, 6:30pm - 9.30pm</h3>
+        <h1>Save the Date</h1>
+        <h3>Tuesday, 23 June 2015, 6:30pm - 9.00pm</h3>
         <h4>The Rooftop Terrace, Finsbury offices, 3 Columbus Circle, New York, 10019, USA</h4>
         <hr/>
         <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>

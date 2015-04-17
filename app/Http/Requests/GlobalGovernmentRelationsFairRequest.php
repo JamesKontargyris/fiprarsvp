@@ -25,6 +25,7 @@ class GlobalGovernmentRelationsFairRequest extends Request
         return [
             'first_name'    => 'required',
             'last_name'     => 'required',
+            'company_name'  => 'required',
             'email'         => 'required|email',
             'telephone'     => 'required',
             'fipra_contact' => 'required'
@@ -36,6 +37,7 @@ class GlobalGovernmentRelationsFairRequest extends Request
         return [
             'first_name.required'    => 'Please enter your first name.',
             'last_name.required'     => 'Please enter your last name.',
+            'company_name.required'  => 'Please enter the name of your company.',
             'email.required'         => 'Please enter your email address.',
             'email.email'            => 'Please enter a valid email address.',
             'telephone.required'     => 'Please enter your mobile/cell number.',

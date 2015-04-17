@@ -31,6 +31,10 @@
                 {!! Form::text('last_name', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
+                {!! Form::label('company_name', 'Company Name:') !!}
+                {!! Form::text('company_name', null, ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
                 {!! Form::label('email', 'Email Address:') !!}
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>

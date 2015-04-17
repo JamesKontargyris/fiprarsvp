@@ -33,6 +33,10 @@
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
+                {!! Form::label('company_name', 'Company Name:') !!}
+                {!! Form::text('company_name', null, ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
                 {!! Form::label('telephone', 'Mobile/cell number (with country/area code):') !!}
                 {!! Form::text('telephone', null, ['class' => 'form-control']) !!}
                 <span class="form-field-info">In case we need to reach you about the event</span>

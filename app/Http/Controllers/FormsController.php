@@ -19,4 +19,9 @@ class FormsController extends Controller {
         });
     }
 
+    protected function formatTelephoneNumber($request)
+    {
+        return '+' . $request->country_code . ' ' . $request->area_code . ' ' . $request->tel_1 . ' ' . $request->tel_2;
+    }
+
 }

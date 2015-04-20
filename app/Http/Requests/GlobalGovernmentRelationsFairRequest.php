@@ -27,7 +27,10 @@ class GlobalGovernmentRelationsFairRequest extends Request
             'last_name'     => 'required',
             'company_name'  => 'required',
             'email'         => 'required|email',
-            'telephone'     => 'required',
+            'country_code' => 'required',
+            'area_code'    => 'required|numeric',
+            'tel_1'        => 'required|numeric',
+            'tel_2'        => 'required|numeric',
             'fipra_contact' => 'required'
         ];
     }
@@ -40,7 +43,13 @@ class GlobalGovernmentRelationsFairRequest extends Request
             'company_name.required'  => 'Please enter the name of your company.',
             'email.required'         => 'Please enter your email address.',
             'email.email'            => 'Please enter a valid email address.',
-            'telephone.required'     => 'Please enter your mobile/cell number.',
+            'country_code.required' => 'Please enter your telephone country code.',
+            'area_code.required'    => 'Please enter your telephone area code.',
+            'area_code.numeric'     => 'Please enter only numbers in your telephone number area code.',
+            'tel_1.required'        => 'Please enter the first part of your full telephone number.',
+            'tel_2.required'        => 'Please enter the second part of your full telephone number.',
+            'tel_1.numeric'         => 'Please enter only numbers in the first part of your telephone number.',
+            'tel_2.numeric'         => 'Please enter only numbers in the second part of your telephone number.',
             'fipra_contact.required' => 'Please enter the name(s) of your current Fipra Network contact(s).'
         ];
     }

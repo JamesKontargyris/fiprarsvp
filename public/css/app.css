@@ -291,27 +291,27 @@ hr {
       font-size: 14px;
       font-weight: 900;
       padding-bottom: 0.75em; }
-    .container .form .form-group input {
+    .container .form .form-group input, .container .form .form-group select {
       width: 100%;
       font-size: 1.25em;
       padding: 10px; }
       @media screen and (max-width: 768px)  {
-        .container .form .form-group input {
-          font-size: 1em; } }
-      .container .form .form-group input[type=submit] {
+        .container .form .form-group input, .container .form .form-group select {
+          font-size: 0.75em; } }
+      .container .form .form-group input[type=submit], .container .form .form-group select[type=submit] {
         width: auto;
         padding: 0.75em;
         border: 0; }
         @media screen and (max-width: 768px)  {
-          .container .form .form-group input[type=submit] {
+          .container .form .form-group input[type=submit], .container .form .form-group select[type=submit] {
             display: block;
             width: 100%; } }
-        .container .form .form-group input[type=submit].fipra {
+        .container .form .form-group input[type=submit].fipra, .container .form .form-group select[type=submit].fipra {
           background-color: #0034b2;
           background-image: linear-gradient(#0034b2 0, #00257f 50%);
           border-bottom: 2px solid #000719;
           color: white; }
-        .container .form .form-group input[type=submit].finsbury {
+        .container .form .form-group input[type=submit].finsbury, .container .form .form-group select[type=submit].finsbury {
           background-color: #c8baac;
           background-image: linear-gradient(#c8baac 0, #B3A18E 50%);
           border-bottom: 2px solid #836e58;
@@ -320,6 +320,10 @@ hr {
 footer {
   margin: 1.5em 0 0.75em 0;
   text-align: center; }
+
+.table_label {
+  font-size: 0.875em;
+  line-height: 1.1; }
 
 
 /*# sourceMappingURL=app.css.map */

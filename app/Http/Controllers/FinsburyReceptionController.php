@@ -15,6 +15,8 @@ class FinsburyReceptionController extends FormsController {
 
     public function postIndex(FinsburyReceptionRequest $request)
     {
+        $request->telephone = $this->formatTelephoneNumber($request);
+
         $this->sendMail(env('EMAIL_RECIPIENT', 'james.kontargyris@fipra.com'), 'networkmeeting@fipra.com', 'Fipra Network Meeting RSVP System', 'Finsbury Reception', $request->except('_token'));
 
         return redirect('success_finsbury')->with('first_name', $request->get('first_name'));

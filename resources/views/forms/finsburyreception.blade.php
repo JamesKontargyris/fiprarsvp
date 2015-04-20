@@ -39,8 +39,8 @@
                 {!! Form::text('email', null, ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('telephone', 'Mobile/cell number (with country/area code):') !!}
-                {!! Form::text('telephone', null, ['class' => 'form-control']) !!}
+                {!! Form::label('area_code', 'Mobile/cell number (with country/area code):') !!}
+                @include('partials.phone_entry')
                 <span class="form-field-info">In case we need to reach you about the event</span>
             </div>
             <div class="form-group">

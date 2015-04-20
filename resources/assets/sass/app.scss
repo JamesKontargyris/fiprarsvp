@@ -158,12 +158,12 @@ hr {
         font-weight: $heavy;
         padding-bottom:$vr;
       }
-      input {
+      input, select {
         width:100%;
         font-size:em(20);
         padding:10px;
         @include media($tablet) {
-          font-size:em(16);
+          font-size:em(12);
         }
         &[type=submit] {
           width:auto;
@@ -190,3 +190,5 @@ footer {
   margin:($vr * 2) 0 $vr 0;
   text-align: center;
 }
+
+.table_label { font-size:em(14); line-height:1.1; }

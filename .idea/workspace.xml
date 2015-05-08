@@ -5,7 +5,6 @@
       <change type="DELETED" beforePath="D:\Users\James\Code\fipra\fiprarsvp\npm-debug.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/normalize" afterPath="$PROJECT_DIR$/resources/assets/sass/normalize" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/forms/finsburyreception.blade.php" afterPath="$PROJECT_DIR$/resources/views/forms/finsburyreception.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fiprarsvp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,21 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="finsburyreception.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="finsburyreception.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/forms/finsburyreception.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.931034" vertical-offset="569" max-vertical-offset="1792">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.48078495" vertical-offset="0" max-vertical-offset="1792">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="success_finsbury.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="success_finsbury.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/success_finsbury.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45789042" vertical-offset="0" max-vertical-offset="1223">
-              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state vertical-scroll-proportion="-12.551724" vertical-offset="0" max-vertical-offset="812">
+              <caret line="13" column="530" selection-start-line="13" selection-start-column="530" selection-end-line="13" selection-end-column="530" />
               <folding />
             </state>
           </provider>
@@ -776,18 +775,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forms/finsburyreception.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/success_finsbury.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.931034" vertical-offset="569" max-vertical-offset="1792">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state vertical-scroll-proportion="-12.551724" vertical-offset="0" max-vertical-offset="812">
+          <caret line="13" column="530" selection-start-line="13" selection-start-column="530" selection-end-line="13" selection-end-column="530" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/success_finsbury.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/forms/finsburyreception.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45789042" vertical-offset="0" max-vertical-offset="1223">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.48078495" vertical-offset="0" max-vertical-offset="1792">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>

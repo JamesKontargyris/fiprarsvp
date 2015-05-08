@@ -18,7 +18,7 @@
         <h3>Tuesday, 23 June 2015, 6:30pm - 9.00pm</h3>
         <h4>The Rooftop Terrace, Finsbury, 3 Columbus Circle, New York, 10019, USA</h4>
         <hr/>
-        <p>Please complete the form below to RSVP.</p>
+        <p>Please complete the form to RSVP.</p>
         <p>Any of the details you provide below will not be used for any other purposes.</p>
         {!! Form::open() !!}
             <div class="form-group">

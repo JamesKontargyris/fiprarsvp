@@ -14,12 +14,11 @@
     @include('partials.errors')
 
     <div class="form finsbury-form">
-        <h1>Save the Date</h1>
+        <h1>RSVP Form</h1>
         <h3>Tuesday, 23 June 2015, 6:30pm - 9.00pm</h3>
         <h4>The Rooftop Terrace, Finsbury, 3 Columbus Circle, New York, 10019, USA</h4>
         <hr/>
-        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>
-        <p>You will be sent a formal invitation in due course.</p>
+        <p>Please complete the form below to RSVP.</p>
         <p>Any of the details you provide below will not be used for any other purposes.</p>
         {!! Form::open() !!}
             <div class="form-group">
@@ -52,7 +51,7 @@
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Register', ['class' => 'form-control finsbury']) !!}
+                {!! Form::submit('Submit RSVP', ['class' => 'form-control finsbury']) !!}
             </div>
         {!! Form::close() !!}
     </div>

@@ -14,10 +14,9 @@
     <div class="form">
         <h1>Fipra's Global Government Relations Fair</h1>
         <h3>Thursday, 25 June 2015, 2:00pm - 5.00pm</h3>
-        <h4>The Newseum, 555 Pennsylvania Ave NW, Washington DC</h4>
+        <h4>The Newseum, 555 Pennsylvania Ave NW, Washington, D.C.</h4>
         <hr/>
-        <p>Thank you for expressing your interest in joining us for this event. Please complete the form below to register your interest in attending.</p>
-        <p>You will be sent a formal invitation in due course.</p>
+        <p>Please complete the form to RSVP.</p>
         <p>Any of the details you provide below will not be used for any other purposes.</p>
         {!! Form::open() !!}
             <div class="form-group">
@@ -50,7 +49,7 @@
                 {!! Form::textarea('additional_info', null, ['class' => 'form-control', 'style' => 'width:100%']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Register', ['class' => 'form-control fipra']) !!}
+                {!! Form::submit('Submit RSVP', ['class' => 'form-control fipra']) !!}
             </div>
         {!! Form::close() !!}
     </div>
